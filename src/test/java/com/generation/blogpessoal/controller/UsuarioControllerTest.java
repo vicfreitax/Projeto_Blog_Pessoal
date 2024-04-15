@@ -46,7 +46,7 @@ public class UsuarioControllerTest {
 	@Test
 	@DisplayName ("Cadastrar Um Usuário")
 	public void deveCriarUmUsuario() {
-		
+
 		HttpEntity<Usuario> corpoRequisicao = new HttpEntity<Usuario>(new Usuario(0L, "Paulo Antunes", "paulo_antunes@email.com.br", "13465278", "-"));
 		
 		ResponseEntity<Usuario> corpoResposta = testRestTemplate
